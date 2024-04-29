@@ -10,7 +10,7 @@ def mavenbuild()
 
 def tomcatdeploy(jobname,ip,context)
 {
-sh "scp /home/ubuntu/.Jenkins/workspace/${jobname}/webapp/target/webapp.war ubuntu@${ip}:/var/lib/tomcat9/webapps/${context}.war"
+sh "scp /home/ubuntu/.Jenkins/workspace/${jobname}/webapp/target/webapp.war ubuntu@${ip}:/var/lib/tomcat9/webapp/${context}.war"
 }
 
 
